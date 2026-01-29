@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		09DA53BD2F1F65C80086AF26 /* GlassCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = GlassCast.app; path = "/Users/chandrakiranreddyyeduguri/Desktop/Xcode/Swift UI Projects/GlassCast/build/Debug-iphoneos/GlassCast.app"; sourceTree = "<absolute>"; };
+		09DA54D62F2B432E0086AF26 /* GlassCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlassCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -61,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				09DA53BF2F1F65C80086AF26 /* GlassCast */,
+				09DA54D62F2B432E0086AF26 /* GlassCast.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,7 +93,7 @@
 				09DA53D92F20B6780086AF26 /* Supabase */,
 			);
 			productName = GlassCast;
-			productReference = 09DA53BD2F1F65C80086AF26 /* GlassCast.app */;
+			productReference = 09DA54D62F2B432E0086AF26 /* GlassCast.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -277,6 +278,8 @@
 		};
 		09DA53C92F1F65CA0086AF26 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 09DA53BF2F1F65C80086AF26 /* GlassCast */;
+			baseConfigurationReferenceRelativePath = Debug.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = GlassCastIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +313,8 @@
 		};
 		09DA53CA2F1F65CA0086AF26 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 09DA53BF2F1F65C80086AF26 /* GlassCast */;
+			baseConfigurationReferenceRelativePath = Debug.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = GlassCastIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

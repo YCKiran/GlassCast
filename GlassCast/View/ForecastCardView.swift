@@ -11,35 +11,6 @@ import SwiftUI
 struct ForecastCardView: View {
     let item: ForecastItem
 
-//    var body: some View {
-//        VStack(spacing: 8) {
-//
-//            // Day (Mon, Tue...)
-//            Text(formattedDay)
-//                .font(.headline)
-//
-//            // Weather Icon
-//            Image(systemName: weatherIcon)
-//                .font(.system(size: 32))
-//                .padding(.vertical, 4)
-//
-//            // Temperature
-//            VStack(spacing: 2) {
-//                Text("\(Int(item.main.temp_max))°")
-//                    .font(.title3)
-//                    .bold()
-//
-//                Text("\(Int(item.main.temp_min))°")
-//                    .font(.caption)
-//                    .foregroundColor(.secondary)
-//            }
-//        }
-//        .frame(width: 90, height: 130)
-//        .padding(8)
-//        .background(.thinMaterial)
-//        .clipShape(RoundedRectangle(cornerRadius: 16))
-//    }
-
     // MARK: - Forecast Card Styled
     var body: some View {
         VStack(spacing: 10) {
@@ -78,23 +49,6 @@ struct ForecastCardView: View {
         return formatter.string(from: item.dt)
     }
 
-//    private var weatherIcon: String {
-//        guard let condition = item.weather.first?.main.lowercased() else {
-//            return "questionmark.circle"
-//        }
-//
-//        switch condition {
-//            case "clear": return "sun.max.fill"
-//            case "clouds": return "cloud.fill"
-//            case "rain": return "cloud.rain.fill"
-//            case "drizzle": return "cloud.drizzle.fill"
-//            case "thunderstorm": return "cloud.bolt.rain.fill"
-//            case "snow": return "snow"
-//            case "mist", "fog": return "cloud.fog.fill"
-//            default: return "cloud"
-//        }
-//    }
-    
     private var weatherIcon: String {
         guard let cloud = item.weather.first?.main.lowercased() else {
             return "undefined"
@@ -103,17 +57,6 @@ struct ForecastCardView: View {
     }
 
 }
-
-//enum CloudType: String {
-//    case clear = "sun.max.fill"
-//    case clouds = "cloud.fill"
-//    case rain = "cloud.rain.fill"
-//    case drizzle = "cloud.drizzle.fill"
-//    case thunderstorm = "cloud.bolt.rain.fill"
-//    case snow = "snow"
-//    case mist, fog = "cloud.fog.fill"
-//    case undefined = "cloud"
-//}
 
 
 enum CloudTypes: String {
