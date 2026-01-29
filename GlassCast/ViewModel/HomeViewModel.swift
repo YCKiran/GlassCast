@@ -27,11 +27,9 @@ final class HomeViewModel: ObservableObject {
         do {
             weather = try await service.fetchCurrentWeather(lat: city.lat, lon: city.lon, unit: unit)
             forecast = try await service.fetchFiveDayForecast(lat: city.lat, lon: city.lon, unit: unit)
-            
-//            weather = try await service.fetchCurrentWeather(city: city.name, unit: unit)
-//            forecast = try await service.fetchFiveDayForecast(city: city.name, unit: unit)
-            print("Weather: \(weather!)")
-            print("Forecast: \(forecast!)")
+
+//            print("Weather: \(weather!)")
+//            print("Forecast: \(forecast!)")
         } catch {
             print("Error in fetching weather: \(error)")
             errorMessage = error.localizedDescription
