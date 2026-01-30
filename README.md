@@ -37,7 +37,7 @@ create table if not exists favorite_cities (
 7. Create Property file(.plist) and add the properties below as below
    
     <img width="639" height="166" alt="Image" src="https://github.com/user-attachments/assets/e0311d4c-f8fd-47e3-bd5c-9ee358334822" />
-8. Now your project is ready to run
+8. Now project is ready to run in local
 
 # Application Demonstration
 
